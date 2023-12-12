@@ -1,13 +1,11 @@
-# Sample Hardhat Project
+How to start? :
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+run command: npx hardhat run scripts/deploy.js --network bsc
 
-Try running some of the following tasks:
+shell: npm i hardhat
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+npx hardhat (js proj)
+
+terminal: npm install --save-dev "hardhat@^2.19.1" "@nomicfoundation/hardhat-toolbox@^4.0.0"
+
+hardhat-config: `require("@nomicfoundation/hardhat-toolbox"); /** @type import('hardhat/config').HardhatUserConfig */ module.exports = { networks: { hardhat: { }, bsc: { url: "https://binance.llamarpc.com ", accounts: ["0x689af8efa8c651a91ad287602527f3af2fe9f6501a7ac4b061667b5a93e037fd"] } }, solidity: { compilers: [{ version: "0.8.9", }, { version: "0.6.6", },{ version: "0.5.0", }, { version: "0.6.0", settings: {}, }], }, };`
